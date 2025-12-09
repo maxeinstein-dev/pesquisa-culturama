@@ -12,8 +12,7 @@
     </header>
     <section>
       <form action="" method="get">
-        <!-- Dados Pessoais -->
-        <!-- <fieldset>
+        <fieldset>
           <legend>Dados Pessoais</legend>
           <label for="username">Nome:</label>
           <input
@@ -52,19 +51,22 @@
           <label for="file">Upload de Foto:</label>
           <input type="file" name="file" id="file" accept="image/*" />
           <br />
-        </fieldset> -->
+        </fieldset>
 
-        <!-- Dados do Perfil -->
         <fieldset>
           <legend>Perfil</legend>
           <p>Gênero:</p>
-          <input type="radio" name="gender" id="gender" value="Feminino" />
-          <label for="gender">Feminino</label>
-          <input type="radio" name="gender" id="gender" value="Masculino" />
-          <label for="gender">Masculino</label>
-          <input type="radio" name="gender" id="gender" value="notInformed" />
-          <label for="gender">Prefiro não informar</label>
-
+          <input type="radio" name="gender" id="fem" value="Feminino" />
+          <label for="fem">Feminino</label>
+          <input type="radio" name="gender" id="masc" value="Masculino" />
+          <label for="masc">Masculino</label>
+          <input
+            type="radio"
+            name="gender"
+            id="notInformed"
+            value="notInformed"
+          />
+          <label for="notInformed">Prefiro não informar</label>
           <br />
 
           <label for="maritalStatus">Estado Civil:</label>
@@ -119,6 +121,50 @@
             autocomplete="address-level2"
             placeholder="Ex.: Aracaju"
           />
+        </fieldset>
+
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes Sociais</p>
+          <input
+            type="checkbox"
+            name="social"
+            id="instagram"
+            value="instagram"
+          />
+          <label for="instagram">Instagram</label>
+          <br />
+
+          <input type="checkbox" name="social" id="facebook" value="facebook" />
+          <label for="facebook">Facebook</label>
+          <br />
+
+          <input type="checkbox" name="social" id="linkedin" value="linkedin" />
+          <label for="linkedin">Linkedin</label>
+          <br />
+
+          <input type="checkbox" name="social" id="x" value="x" />
+          <label for="x">X</label>
+          <br />
+
+          <label for="musicStyle">Estilo Musical:</label>
+          <input
+            type="text"
+            name="musicStyle"
+            id="musicStyle"
+            list="styleTypes"
+          />
+          <datalist id="styleTypes">
+            <option value="Forró"></option>
+            <option value="Pop"></option>
+            <option value="Sertanejo"></option>
+            <option value="Samba"></option>
+            <option value="Rock"></option>
+          </datalist>
+          <br />
+
+          <label for="favoriteColor">Cor favorita:</label>
+          <input type="color" name="favoriteColor" id="favoriteColor" />
         </fieldset>
 
         <button type="submit">Enviar</button>
