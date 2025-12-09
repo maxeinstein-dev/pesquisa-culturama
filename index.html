@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de pesquisa de opinião da Culturama"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,10 +63,22 @@
               id="phone"
               pattern="[0-9]{11}"
               placeholder="DDD + número sem espaços ou hífens"
+              aria-describedby="phoneHelp"
             />
+            <small id="phoneHelp"
+              >Preencha com 11 dígitos no formato: DDD + número sem espaços ou
+              hífens</small
+            >
             <br />
             <label for="file">Upload de Foto:</label>
-            <input type="file" name="file" id="file" accept="image/*" />
+            <input
+              type="file"
+              name="file"
+              id="file"
+              accept="image/*"
+              aria-describedby="imageHelp"
+            />
+            <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
             <br />
           </fieldset>
 
@@ -248,8 +264,12 @@
             <br />
           </fieldset>
 
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpar</button>
+          <button type="submit" aria-label="Enviar dados do formulário">
+            Enviar
+          </button>
+          <button type="reset" aria-label="Limpar dados do formulário">
+            Limpar
+          </button>
         </form>
       </section>
     </main>
