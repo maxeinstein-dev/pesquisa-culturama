@@ -12,8 +12,7 @@
     </header>
     <section>
       <form action="" method="get">
-        <!-- Dados Pessoais -->
-        <!-- <fieldset>
+        <fieldset>
           <legend>Dados Pessoais</legend>
           <label for="username">Nome:</label>
           <input
@@ -52,9 +51,8 @@
           <label for="file">Upload de Foto:</label>
           <input type="file" name="file" id="file" accept="image/*" />
           <br />
-        </fieldset> -->
+        </fieldset>
 
-        <!-- Dados do Perfil -->
         <fieldset>
           <legend>Perfil</legend>
           <p>Gênero:</p>
@@ -119,6 +117,26 @@
             autocomplete="address-level2"
             placeholder="Ex.: Aracaju"
           />
+        </fieldset>
+
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes Sociais</p>
+          <input type="checkbox" name="social" id="social" value="instagram" />
+          <label for="social">Instagram</label>
+          <br />
+
+          <input type="checkbox" name="social" id="social" value="facebook" />
+          <label for="social">Facebook</label>
+          <br />
+
+          <input type="checkbox" name="social" id="social" value="linkedin" />
+          <label for="social">Linkedin</label>
+          <br />
+
+          <input type="checkbox" name="social" id="social" value="x" />
+          <label for="social">x</label>
+          <br />
         </fieldset>
 
         <button type="submit">Enviar</button>
