@@ -67,7 +67,14 @@
             >
             <br />
             <label for="file">Upload de Foto:</label>
-            <input type="file" name="file" id="file" accept="image/*" />
+            <input
+              type="file"
+              name="file"
+              id="file"
+              accept="image/*"
+              aria-describedby="imageHelp"
+            />
+            <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
             <br />
           </fieldset>
 
